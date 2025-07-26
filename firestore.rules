@@ -1,0 +1,20 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Only allow authenticated users to upload to the 'reports' folder
+    match /reports/{userId}/{allPaths=**} {
+      allow write: if request.auth != null && request.auth.uid == userId
+                   && request.resource.size < 5 * 1024 * 1024
+                   && request.resource.contentType.matches('image/.*');
+      allow read; // Allow anyone to read images (e.g., to display reports)
+    }
+  }
+}

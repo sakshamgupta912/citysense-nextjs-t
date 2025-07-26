@@ -1,0 +1,40 @@
+{
+  "name": "citysense-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "deploy:frontend": "npm run build && firebase deploy --only hosting",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@genkit-ai/googleai": "^1.14.1",
+    "@googlemaps/js-api-loader": "^1.16.10",
+    "@heroicons/react": "^2.2.0",
+    "@react-google-maps/api": "^2.20.7",
+    "@types/ngeohash": "^0.6.8",
+    "clsx": "^2.1.1",
+    "create-genkit": "^0.0.1",
+    "firebase": "^11.10.0",
+    "genkit": "^1.14.1",
+    "geofire-common": "^6.0.0",
+    "google-map-react": "^2.2.5",
+    "lucide-react": "^0.525.0",
+    "next": "15.4.1",
+    "ngeohash": "^0.6.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/google.maps": "^3.58.1",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "packageManager": "npm@11.4.2+sha512.f90c1ec8b207b625d6edb6693aef23dacb39c38e4217fe8c46a973f119cab392ac0de23fe3f07e583188dae9fd9108b3845ad6f525b598742bd060ebad60bff3"
+}

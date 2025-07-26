@@ -1,0 +1,62 @@
+|-- .env.local
+|-- .env.production
+|-- .firebase
+    |-- hosting.b3V0.cache
+|-- .firebaserc
+|-- .github
+    |-- workflows
+        |-- firebase-hosting-merge.yml
+        |-- firebase-hosting-pull-request.yml
+|-- .gitignore
+|-- .idx
+    |-- dev.nix
+|-- README.md
+|-- app
+    |-- favicon.ico
+    |-- globals.css
+    |-- layout.tsx
+    |-- leaderboard
+        |-- page.tsx
+    |-- loading.tsx
+    |-- login
+        |-- page.tsx
+    |-- page.tsx
+    |-- profile
+        |-- page.tsx
+    |-- report
+        |-- page.tsx
+    |-- voting
+        |-- page.tsx
+|-- components
+    |-- Auth.tsx
+    |-- AuthProvider.tsx
+    |-- Map.tsx
+    |-- Navbar.tsx
+    |-- Spinner.tsx
+|-- firebase.json
+|-- firebase.ts
+|-- firestore.indexes.json
+|-- firestore.rules
+|-- implementation.md
+|-- next-env.d.ts
+|-- next.config.ts
+|-- package-lock.json
+|-- package.json
+|-- phases.md
+    |-- phase.md
+    |-- test.ts
+|-- postcss.config.mjs
+|-- public
+    |-- file.svg
+    |-- globe.svg
+    |-- logo_citysense.png
+    |-- next.svg
+    |-- vercel.svg
+    |-- window.svg
+|-- tailwind.config.ts
+|-- testcase
+    |-- test case check list .md
+|-- tsconfig.json
+|-- utils
+    |-- jitter.ts
+    |-- loadGoogleMaps.ts
